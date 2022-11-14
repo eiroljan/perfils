@@ -5,9 +5,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "FHSIS ",
-  "description": "FHSIS Maternal Care Mobile Version",
-  "short_name": "FHSIS Maternal Care",
+  "name": "Perfil ",
+  "description": "Perfil Web Version",
+  "short_name": "Perfil",
   "categories": ["healthcare", "pwa", "medical","offline-first"],
   "prefer_related_applications": false,
 

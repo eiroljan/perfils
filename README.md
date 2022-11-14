@@ -1,4 +1,4 @@
-# FHSIS Mobile Version Open Source Code V3 ⚛️ 🚀
+# Perfil Web Version Open Source Code V3 ⚛️ 🚀
 # React Authentication using Firebase (new API v9)
 
 Open Source Code with React ⚛️ and Firebase 🔥designed to quickly spin up a fully functional admin dashboard with authentication, authorization, Realtime Database / Firestore, built-in CI/CD and more. We're using up to date industry standards and offline-first approach and next-gen technologies like React, Firebase/Firestore V9, Workbox and Service Workers.
@@ -33,7 +33,7 @@ Open Source Code with React ⚛️ and Firebase 🔥designed to quickly spin up 
 
 ## What is this?
 
-Open Source code of FHSIS Mobile Version. The template is based on [ChakraUI](https://chakra-ui.com/) (incl. **Dark Mode**) and [React](https://reactjs.org/) .
+Open Source code of Perfil Web Version. The template is based on [ChakraUI](https://chakra-ui.com/) (incl. **Dark Mode**) and [React](https://reactjs.org/) .
 
 ## Why should I use it?
 
@@ -42,8 +42,7 @@ Open Source code of FHSIS Mobile Version. The template is based on [ChakraUI](ht
 - It is PWA (Progressive Web App) ready. Works with Android(Installable),IOS(Installable), Desktop(Installable) and Web browsers.
 - It uses [Firebase](https://firebase.google.com/docs/build) V9.2.
 - It At the moment currently supports Maternal Care Services.
-- DOH FHSIS Reports Compatible/Interoperable
-- It is Modular easy to use.(Other components of the FHSIS can be added easily)
+- It is Modular easy to use.(Other components of the Perfil can be added easily)
 
 ## Features
 
