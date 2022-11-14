@@ -155,11 +155,11 @@ const MobileNav = () => {
               Login
             </Text>
           </Link>
-          <Link to='/register'>
+          {/* <Link to='/register'>
             <Text fontWeight={600} color="gray.600" >
               Register
             </Text>
-          </Link>
+          </Link> */}
         </VStack>
       }
     </Stack>
