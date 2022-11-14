@@ -129,9 +129,9 @@ export default function Loginpage() {
           <Button variant='link'>
             <Link to='/forgot-password'>Forgot password?</Link>
           </Button>
-          <Button variant='link' onClick={() => history.push('/register')}>
+          {/* <Button variant='link' onClick={() => history.push('/register')}>
             Register
-          </Button>
+          </Button> */}
         </HStack>
         <DividerWithText my={6}>OR</DividerWithText>
         <Button
