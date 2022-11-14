@@ -117,10 +117,7 @@ For  access to the demo <a href="https://capstone-chakraui.vercel.app/">demo sit
 We'd like to thank these awesome people who made this whole thing happen:
 
 <ul>
- <li><a href="https://github.com/GeneGulanesJr">Gene Gulanes Jr</a></li>
-    <li><a href="https://github.com/jeffigy">Jeffy Evangelista</a></li>
-    <li><a href="https://github.com/eiroljan">Eirol Coronado</a></li>
-    <li><a href="https://github.com/delgadoit111">Jhon Delgado</a></li>
+ 
 </ul>
 
 ## License
