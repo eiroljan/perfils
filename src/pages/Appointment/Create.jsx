@@ -77,7 +77,7 @@ export default function Create() {
                 colorScheme='green'
                 onClick={onOpen}
             >
-                Add Appointment
+                Appointment
             </Button>
             <Modal
                 isOpen={isOpen}

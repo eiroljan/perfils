@@ -66,7 +66,7 @@ export default function IndexClient() {
             //     sortable: true,
             // },
             {
-                name: "Actions",
+                name: "Update Examination",
                 cell: (works) => <HStack>
                                         
                     {/* <ViewClient works={works} /> */}

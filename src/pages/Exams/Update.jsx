@@ -65,7 +65,7 @@ export default function Update({ works }) {
                 <ModalContent>
                     <ModalCloseButton />
                     <ModalHeader borderBottomWidth='1px'>
-                        Update Social Worker Account
+                        Update Account
                     </ModalHeader>
 
                     <Formik
