@@ -142,8 +142,13 @@ export default function Update({ works }) {
                                         </Field>
 
                                         <Select
-                                            label="Result"
-                                            name="result"
+                                            label="Hiv"
+                                            name="hiv"
+                                            options={status}
+                                        />
+                                         <Select
+                                            label="Other Test"
+                                            name="other test"
                                             options={status}
                                         />
 

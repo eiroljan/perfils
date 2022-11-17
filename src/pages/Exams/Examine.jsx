@@ -9,7 +9,7 @@ import { Layout } from '../../components/Layout'
 import React, { useEffect, useState, useMemo } from 'react'
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../utils/init-firebase";
-// import Create from "./Create";
+import Create from "./Create";
 import DataTable from "react-data-table-component";
 import Update from './Update'
 import moment from "moment";
@@ -51,13 +51,18 @@ export default function IndexClient() {
                 sortable: true,
             },
             {
-                name: "Result",
+                name: "Hiv",
+                selector: (row) => row.result,
+                sortable: true,
+            },
+            {
+                name: "other test",
                 selector: (row) => row.result,
                 sortable: true,
             },
             // {
-            //     name: "CreatedAt",
-            //     selector: (row) => moment(row.createdAt.seconds*1000 ).add(1, 'day').add(255, 'days').format('LLL'),
+            //     name: "Appointment",
+            //     selector: (row) => moment(row.appointment.seconds*1000 ).add(1, 'day').add(255, 'days').format('LLL'),
             //     sortable: true,
             // },
             {
@@ -87,7 +92,7 @@ export default function IndexClient() {
 
                 <Flex pb={5}>
                     <Box>
-                        {/* <Create /> */}
+                        <Create />
                     </Box>
                     <Spacer />
                     <Box>

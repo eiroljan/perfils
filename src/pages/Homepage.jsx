@@ -44,7 +44,7 @@ export default function Homepage() {
                 src="https://gulaneskorp.betteruptime.com/"
                 style={{ width: '1px', minWidth: '100%', minHeight: '700px'}}
             /> */}
-            <Grid templateColumns='repeat(4, 1fr)' gap={6}>
+            {/* <Grid templateColumns='repeat(4, 1fr)' gap={6}>
               <GridItem w='100%' h='100' bg='#6C4AB6' border='2px' borderColor='gray.200' rounded='md'>
                 <Text as='b' ml={5} fontSize={32} color='white' >10+</Text>
                 <br />
@@ -85,7 +85,7 @@ export default function Homepage() {
                 data={data}
                 options={options}
             />    
-        
+         */}
     </Layout>
 
   )

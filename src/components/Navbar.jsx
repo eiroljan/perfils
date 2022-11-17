@@ -65,7 +65,7 @@ const Navbar = () => {
                 Login
               </Link>
             </Button>
-            <Link to='/register'>
+            {/* <Link to='/register'>
               <Button
                 display={{ base: "none", md: "inline-flex" }}
                 fontSize={"sm"}
@@ -79,7 +79,7 @@ const Navbar = () => {
               >
                 Register
               </Button>
-            </Link>
+            </Link> */}
           </Stack>
         }
         {currentUser &&
@@ -177,11 +177,11 @@ const DesktopNav = () => {
               Accounts
             </Text>
           </Link>
-          <Link to='/appoint'>
+          {/* <Link to='/appoint'>
             <Text fontWeight={600} color="gray.600" >
               Appointments
             </Text>
-          </Link>
+          </Link> */}
           <Link to='/target-client-list'>
             <Text fontWeight={600} color="gray.600" >
               Client Status
@@ -194,7 +194,7 @@ const DesktopNav = () => {
           </Link>
           <Link to='/exams'>
             <Text fontWeight={600} color="gray.600" >
-              Exams
+              Examination
             </Text>
           </Link>
           <Link to='/reports'>
