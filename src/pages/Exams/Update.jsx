@@ -131,6 +131,35 @@ export default function Update({ works }) {
                                                 </FormControl>
                                             )}
                                         </Field>
+
+                                        <Field name='sex' >
+                                            {({ field, form }) => (
+                                                <FormControl isInvalid={form.errors.sex && form.touched.sex}>
+                                                    <FormLabel htmlFor='sex'>Sex</FormLabel>
+                                                    <Input {...field} id='sex' />
+                                                    <FormErrorMessage>{form.errors.sex}</FormErrorMessage>
+                                                </FormControl>
+                                            )}
+                                        </Field>
+                                        <Field name='civilStatus' >
+                                            {({ field, form }) => (
+                                                <FormControl isInvalid={form.errors.civilStatus && form.touched.civilStatus}>
+                                                    <FormLabel htmlFor='civilStatus'>Civil Status</FormLabel>
+                                                    <Input {...field} id='civilStatus' />
+                                                    <FormErrorMessage>{form.errors.civilStatus}</FormErrorMessage>
+                                                </FormControl>
+                                            )}
+                                        </Field>
+                                          <Field name='nationality' >
+                                            {({ field, form }) => (
+                                                <FormControl isInvalid={form.errors.nationality && form.touched.nationality}>
+                                                    <FormLabel htmlFor='nationality'>Nationality</FormLabel>
+                                                    <Input {...field} id='nationality' />
+                                                    <FormErrorMessage>{form.errors.nationality}</FormErrorMessage>
+                                                </FormControl>
+                                            )}
+                                        </Field>
+
                                         <Field name='email' >
                                             {({ field, form }) => (
                                                 <FormControl isInvalid={form.errors.email && form.touched.email}>
@@ -146,12 +175,15 @@ export default function Update({ works }) {
                                             name="hiv"
                                             options={status}
                                         />
-                                         <Select
-                                            label="Other Test"
-                                            name="other test"
-                                            options={status}
-                                        />
-
+                                        <Field name='examineDate' >
+                                        {({ field, form }) => (
+                                            <FormControl isInvalid={form.errors.email && form.touched.email}>
+                                                <FormLabel htmlFor='examineDate'>Date Examine</FormLabel>
+                                                <Input {...field} id='examineDate' placeholder='mm/dd/yy' isDisabled/>
+                                                <FormErrorMessage>{form.errors.email}</FormErrorMessage>
+                                            </FormControl>
+                                        )}
+                                    </Field>
                                         {/* <DatePicker
                                                         label="Appointment"
                                                         name="appointment"

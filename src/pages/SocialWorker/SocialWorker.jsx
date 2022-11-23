@@ -36,6 +36,11 @@ export default function IndexClient() {
     const columns = useMemo(
         () => [
             {
+                name: "Identification Number",
+                selector: (row) => row.identification,
+                sortable: true,
+            },
+            {
                 name: "First Name",
                 selector: (row) => row.firstName,
                 sortable: true,
@@ -48,6 +53,31 @@ export default function IndexClient() {
             {
                 name: "Last Name",
                 selector: (row) => row.lastName,
+                sortable: true,
+            },
+            {
+                name: "Sex",
+                selector: (row) => row.sex,
+                sortable: true,
+            },
+            {
+                name: "Civil Status",
+                selector: (row) => row.civilStatus,
+                sortable: true,
+            },
+            {
+                name: "Establishment",
+                selector: (row) => row.establishment,
+                sortable: true,
+            },
+            {
+                name: "Phone",
+                selector: (row) => row.phone,
+                sortable: true,
+            },
+            {
+                name: "Status",
+                selector: (row) => row.status,
                 sortable: true,
             },
             // {

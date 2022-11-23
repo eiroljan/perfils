@@ -7,21 +7,18 @@ import { Chart } from "react-google-charts";
 export const cluster = [
   [
     "Month",
-    "Positive Male",
-    "Negative Male",
-    "Positive Female",
-    "Negative Female",
-    "Average",
+    "Male",
+    "Female",
   ],
 
-  ["2019", 120, 138, 122, 123, 100],
-  ["2020", 135, 112, 110, 122, 110],
-  ["2021", 125, 116, 157, 110, 120],
-  ["2022", 110, 111, 125, 121, 100],
+  ["2019", 30, 20,],
+  ["2020", 50, 60,],
+  ["2021", 50, 65,],
+  ["2022", 60, 80,],
 ];
 
 export const title = {
-  title: "Number of positive and negative",
+  title: "Number of Male and Female",
   vAxis: { title: "" },
   hAxis: { title: "Month" },
   seriesType: "bars",
@@ -69,6 +66,36 @@ export default function Index() {
                     REPORTS
                 </Heading>
             </Flex>
+
+            <Chart
+                chartType="ComboChart"
+                width="100%"
+                height="400px"
+                data={cluster}
+                options={title}
+            />
+            <Grid templateColumns='repeat(4, 1fr)' gap={6}>
+              <GridItem w='100%' h='100'bg='#00E7FF' rounded='md'>
+                <Text fontSize='3xl' m={6} as='b'>10</Text>
+                <br />
+                <Text as='b' m={5}>Age <span>{"<"}</span> 18</Text>
+              </GridItem>
+              <GridItem w='100%' h='100'bg='#00E7FF' rounded='md'>
+                <Text fontSize='3xl' m={6} as='b'>80</Text>
+                <br />
+                <Text as='b' m={5}>Age <span>{">"}</span> 18</Text>
+              </GridItem>
+              <GridItem w='100%' h='100'bg='#00E7FF' rounded='md'>
+                <Text fontSize='3xl' m={6} as='b'>30</Text>
+                <br />
+                <Text as='b' m={5}>Single</Text>
+              </GridItem>
+              <GridItem w='100%' h='100'bg='#00E7FF' rounded='md'>
+                <Text fontSize='3xl' m={6} as='b'>20</Text>
+                <br />
+                <Text as='b' m={5}>Married</Text>
+              </GridItem>
+            </Grid>
             <Chart
                 chartType="ComboChart"
                 width="100%"
@@ -76,13 +103,7 @@ export default function Index() {
                 data={data}
                 options={options}
             />
-             <Chart
-                chartType="ComboChart"
-                width="100%"
-                height="400px"
-                data={cluster}
-                options={title}
-            />
+            
 
             {/* <Grid templateColumns='repeat(5, 1fr)' gap={6} mt={10}>
             <GridItem w='100%' h='10' bg='blue.500' />

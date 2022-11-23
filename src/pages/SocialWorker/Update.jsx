@@ -6,7 +6,7 @@ import {
     ModalHeader,
     ModalOverlay,
     ModalContent, Tooltip,
-    ModalCloseButton, useDisclosure, Button, Input, FormControl, FormErrorMessage, FormLabel, Stack, useToast
+    ModalCloseButton, useDisclosure, Button, Input, FormControl, FormErrorMessage, FormLabel, Stack, useToast, Center, Avatar, Wrap, WrapItem,
 } from '@chakra-ui/react'
 import { Form, Field, Formik } from "formik";
 import { EditIcon } from '@chakra-ui/icons'
@@ -85,7 +85,24 @@ export default function Update({ works }) {
                         {(props) => (
                             <Form>
                                 <ModalBody>
+                                <Center>
+                                    <Wrap>
+                                        <WrapItem>
+                                        <Avatar size='2xl' src='https://bit.ly/broken-link' />
+                                        </WrapItem>
+                                    </Wrap>
+                                </Center>
                                     <Stack spacing='24px'>
+                                        <Field name='idNumber' >
+                                                {({ field, form }) => (
+                                                    <FormControl isInvalid={form.errors.idNumber && form.touched.idNumber}>
+                                                        <FormLabel htmlFor='idNumber'>Identification</FormLabel>
+                                                        <Input {...field} id='idNumber' />
+                                                        <FormErrorMessage>{form.errors.idNumber}</FormErrorMessage>
+                                                    </FormControl>
+                                                )}
+                                            </Field>
+                                        
                                         <Field name='displayName' >
                                             {({ field, form }) => (
                                                 <FormControl isInvalid={form.errors.displayName && form.touched.displayName}>
@@ -125,12 +142,51 @@ export default function Update({ works }) {
                                                 </FormControl>
                                             )}
                                         </Field>
+                                        
+                                        <Field name='age' >
+                                                {({ field, form }) => (
+                                                    <FormControl isInvalid={form.errors.age && form.touched.age}>
+                                                        <FormLabel htmlFor='age'>Age</FormLabel>
+                                                        <Input {...field} id='age' type="number"/>
+                                                        <FormErrorMessage>{form.errors.age}</FormErrorMessage>
+                                                    </FormControl>
+                                                )}
+                                            </Field>
+
                                         <Field name='email' >
                                             {({ field, form }) => (
                                                 <FormControl isInvalid={form.errors.email && form.touched.email}>
                                                     <FormLabel htmlFor='email'>Email Address</FormLabel>
                                                     <Input {...field} id='email' placeholder='email' isDisabled/>
                                                     <FormErrorMessage>{form.errors.email}</FormErrorMessage>
+                                                </FormControl>
+                                            )}
+                                        </Field>
+
+                                        <Field name='sex' >
+                                            {({ field, form }) => (
+                                                <FormControl isInvalid={form.errors.sex && form.touched.sex}>
+                                                    <FormLabel htmlFor='sex'>Sex</FormLabel>
+                                                    <Input {...field} id='sex' />
+                                                    <FormErrorMessage>{form.errors.sex}</FormErrorMessage>
+                                                </FormControl>
+                                            )}
+                                        </Field>
+                                        <Field name='civilStatus' >
+                                            {({ field, form }) => (
+                                                <FormControl isInvalid={form.errors.civilStatus && form.touched.civilStatus}>
+                                                    <FormLabel htmlFor='civilStatus'>Civil Status</FormLabel>
+                                                    <Input {...field} id='civilStatus' />
+                                                    <FormErrorMessage>{form.errors.civilStatus}</FormErrorMessage>
+                                                </FormControl>
+                                            )}
+                                        </Field>
+                                          <Field name='nationality' >
+                                            {({ field, form }) => (
+                                                <FormControl isInvalid={form.errors.nationality && form.touched.nationality}>
+                                                    <FormLabel htmlFor='nationality'>Nationality</FormLabel>
+                                                    <Input {...field} id='nationality' />
+                                                    <FormErrorMessage>{form.errors.nationality}</FormErrorMessage>
                                                 </FormControl>
                                             )}
                                         </Field>
