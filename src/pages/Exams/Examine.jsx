@@ -51,14 +51,19 @@ export default function IndexClient() {
                 sortable: true,
             },
             {
-                name: "Hiv",
-                selector: (row) => row.result,
-                sortable: true,
+                name: "Gender",
+                // selector: (row) => row.result,
+                // sortable: true,
             },
             {
-                name: "other test",
-                selector: (row) => row.result,
-                sortable: true,
+                name: "Establishment",
+                // selector: (row) => row.result,
+                // sortable: true,
+            },
+            {
+                name: "Phone",
+                // selector: (row) => row.result,
+                // sortable: true,
             },
             // {
             //     name: "Appointment",
