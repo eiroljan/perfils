@@ -1,5 +1,5 @@
 import { Flex, Heading, Text } from '@chakra-ui/layout'
-import { Grid, GridItem , Box, Image, StarIcon, Badge} from '@chakra-ui/react'
+import { Grid, GridItem , Box, Image, StarIcon, Badge, Spacer} from '@chakra-ui/react'
 import React from 'react'
 import { Layout } from '../../components/Layout'
 import { Chart } from "react-google-charts";
@@ -29,28 +29,45 @@ export const title = {
 export const data = [
     [
       "Month",
-      "Male",
-      "Female",
       "Positive",
       "Nagative",
       "Average",
     ],
 
-    ["2019", 165, 938, 522, 998, 614.6],
-    ["2020", 135, 1120, 599, 1268, 682],
-    ["2021", 157, 1167, 587, 807, 623],
-    ["2022", 139, 1110, 615, 968, 609.4],
+    ["2019",  522, 998, 614.6],
+    ["2020",  599, 1268, 682],
+    ["2021",  587, 807, 623],
+    ["2022",  615, 968, 609.4],
   ];
   
   export const options = {
-    title: "Tested",
+    title: "",
     vAxis: { title: "" },
     hAxis: { title: "Month" },
     seriesType: "bars",
     series: { 5: { type: "line" } },
   };
 
+  export const place = [
+    ["Brgy", "Population",],
+    ["Matina", 20],
+    ["Toril", 10],
+    ["Buhangin", 30],
+    ["Bolivard", 40],
+  ];
   
+  export const area = {
+    title: "Most Common area",
+    chartArea: { width: "50%" },
+    colors: ["#b0120a", "#ffab91"],
+    hAxis: {
+      title: "Total Population",
+      minValue: 0,
+    },
+    // vAxis: {
+    //   title: "City",
+    // },
+  };
 
 
 export default function Index() {
@@ -96,14 +113,20 @@ export default function Index() {
                 <Text as='b' m={5}>Married</Text>
               </GridItem>
             </Grid>
-            <Chart
-                chartType="ComboChart"
+              <Chart
+                  chartType="ComboChart"
+                  width="100%"
+                  height="400px"
+                  data={data}
+                  options={options}
+                />
+             <Chart
+                chartType="BarChart"
                 width="100%"
                 height="400px"
-                data={data}
-                options={options}
-            />
-            
+                data={place}
+                options={area}
+             />
 
             {/* <Grid templateColumns='repeat(5, 1fr)' gap={6} mt={10}>
             <GridItem w='100%' h='10' bg='blue.500' />

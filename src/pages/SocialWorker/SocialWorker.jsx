@@ -13,6 +13,7 @@ import Create from "./Create";
 import DataTable from "react-data-table-component";
 import Update from './Update'
 import moment from "moment";
+import ViewClient from "./ViewClient";
 
 
 export default function IndexClient() {
@@ -75,11 +76,7 @@ export default function IndexClient() {
                 selector: (row) => row.phone,
                 sortable: true,
             },
-            {
-                name: "Status",
-                selector: (row) => row.status,
-                sortable: true,
-            },
+            
             // {
             //     name: "CreatedAt",
             //     selector: (row) => moment(row.createdAt.seconds*1000 ).add(1, 'day').add(255, 'days').format('LLL'),
@@ -89,7 +86,7 @@ export default function IndexClient() {
                 name: "Actions",
                 cell: (works) => <HStack>
                                         
-                    {/* <ViewClient works={works} /> */}
+                    <ViewClient works={works} />
                     <Update works={works} />
 
                 </HStack>

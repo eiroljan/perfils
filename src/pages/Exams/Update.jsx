@@ -171,8 +171,8 @@ export default function Update({ works }) {
                                         </Field>
 
                                         <Select
-                                            label="Hiv"
-                                            name="hiv"
+                                            label="Result"
+                                            name="result"
                                             options={status}
                                         />
                                         <Field name='examineDate' >
