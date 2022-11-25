@@ -9,31 +9,6 @@ import IframeResizer from "iframe-resizer-react";
 import { Chart } from "react-google-charts";
 import { Grid, GridItem } from '@chakra-ui/react'
 
-
-export const data = [
-  [
-    "Month",
-    "Establishment 1",
-    "Establishment 2",
-    "Establishment 3",
-    "Establishment 4",
-    "Establishment 5",
-    "Average",
-  ],
-  ["2019", 165, 938, 522, 998, 450, 614.6],
-  ["2020", 135, 1120, 599, 1268, 288, 682],
-  ["2021", 157, 1167, 587, 807, 397, 623],
-  ["2022", 139, 1110, 615, 968, 215, 609.4],
-];
-
-export const options = {
-  title: "Examines",
-  vAxis: { title: "#Examines" },
-  hAxis: { title: "Month" },
-  seriesType: "bars",
-  series: { 5: { type: "line" } },
-};
-
 export default function Homepage() {
 
   return (
