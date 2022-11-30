@@ -42,8 +42,8 @@ function Anouncement() {
         <Heading>
             Anouncement
         </Heading>
-        <Textarea placeholder='Announcement......' w="85%" onChange={(event) => {setCreatepost(event.target.value)}}/>
-        <Button onClick={createAnnouncement} m='20px'>Submit</Button>
+        {/* <Textarea placeholder='Announcement......' w="85%" onChange={(event) => {setCreatepost(event.target.value)}}/>
+        <Button onClick={createAnnouncement} m='20px'>Submit</Button> */}
         {posts.map((post) => {
                     return(
 

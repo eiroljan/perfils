@@ -9,7 +9,7 @@ import { Layout } from '../../components/Layout'
 import React, { useEffect, useState, useMemo } from 'react'
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../utils/init-firebase";
-import ViewClient from "./ViewClient";
+import View from "./View";
 import UpdateClient from "./UpdateClient";
 import Update from "./Update";
 import Create from "./Create";
@@ -38,6 +38,11 @@ export default function IndexClient() {
     const columns = useMemo(
         () => [
             {
+                name: "Identification Number",
+                selector: (row) => row.identification,
+                sortable: true,
+            },
+            {
                 name: "First Name",
                 selector: (row) => row.firstName,
                 sortable: true,
@@ -49,12 +54,27 @@ export default function IndexClient() {
             },
             {
                 name: "Last Name",
-                selector: (row) => row.lastname,
+                selector: (row) => row.lastName,
                 sortable: true,
             },
             {
-                name: "Status",
-                selector: (row) => row.status,
+                name: "Sex",
+                selector: (row) => row.sex,
+                sortable: true,
+            },
+            {
+                name: "Civil Status",
+                selector: (row) => row.civilStatus,
+                sortable: true,
+            },
+            {
+                name: "Establishment",
+                selector: (row) => row.establishment,
+                sortable: true,
+            },
+            {
+                name: "Phone",
+                selector: (row) => row.phone,
                 sortable: true,
             },
         //    {
@@ -66,7 +86,7 @@ export default function IndexClient() {
             {
                 name: "Update",
                 cell: (works) => <HStack>
-                    {/* <ViewClient works={works} /> */}
+                    <View works={works} />
                     <Update works={works} />
 
                 </HStack>

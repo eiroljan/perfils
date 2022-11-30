@@ -472,7 +472,6 @@ export default function Create() {
                 middleName: values.middlename,
                 lastname: values.lastname,
                 createdAt: new Date(),
-                status: "active"
             }
 
         );
@@ -571,22 +570,6 @@ export default function Create() {
                                                         <FormLabel htmlFor='lastname'>Last Name</FormLabel>
                                                         <Input {...field} id='lastname' />
                                                         <FormErrorMessage>{form.errors.lastname}</FormErrorMessage>
-                                                    </FormControl>
-                                                )}
-                                            </Field>
-                                        </Box>
-                                        <Box>
-                                            <Field name='age' >
-                                                {({ field, form }) => (
-                                                    <FormControl isInvalid={form.errors.age && form.touched.age}>
-                                                        <FormLabel htmlFor='firstname'>Age</FormLabel>
-                                                        <NumberInput >
-                                                            <NumberInputField
-                                                                {...field}
-                                                                id='age'
-                                                            />
-                                                        </NumberInput>
-                                                        <FormErrorMessage>{form.errors.age}</FormErrorMessage>
                                                     </FormControl>
                                                 )}
                                             </Field>

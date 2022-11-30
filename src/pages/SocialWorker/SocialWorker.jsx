@@ -57,36 +57,10 @@ export default function IndexClient() {
                 sortable: true,
             },
             {
-                name: "Sex",
-                selector: (row) => row.sex,
-                sortable: true,
-            },
-            {
-                name: "Civil Status",
-                selector: (row) => row.civilStatus,
-                sortable: true,
-            },
-            {
-                name: "Establishment",
-                selector: (row) => row.establishment,
-                sortable: true,
-            },
-            {
-                name: "Phone",
-                selector: (row) => row.phone,
-                sortable: true,
-            },
-            
-            // {
-            //     name: "CreatedAt",
-            //     selector: (row) => moment(row.createdAt.seconds*1000 ).add(1, 'day').add(255, 'days').format('LLL'),
-            //     sortable: true,
-            // },
-            {
                 name: "Actions",
                 cell: (works) => <HStack>
                                         
-                    <ViewClient works={works} />
+                    {/* <ViewClient works={works} /> */}
                     <Update works={works} />
 
                 </HStack>

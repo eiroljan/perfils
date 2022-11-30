@@ -89,15 +89,6 @@ export default function Create() {
                                 <ModalBody>
                                     <Stack spacing={4}>
                                         <Box>
-                                            <Field name='idNumber' >
-                                                {({ field, form }) => (
-                                                    <FormControl isInvalid={form.errors.idNumber && form.touched.idNumber}>
-                                                        <FormLabel htmlFor='idNumber'>Identification</FormLabel>
-                                                        <Input {...field} id='idNumber' />
-                                                        <FormErrorMessage>{form.errors.idNumber}</FormErrorMessage>
-                                                    </FormControl>
-                                                )}
-                                            </Field>
                                             <Field name='displayName' >
                                                 {({ field, form }) => (
                                                     <FormControl isInvalid={form.errors.displayName && form.touched.displayName}>
@@ -134,17 +125,6 @@ export default function Create() {
                                                     </FormControl>
                                                 )}
                                             </Field>
-
-                                            <Field name='age' >
-                                                {({ field, form }) => (
-                                                    <FormControl isInvalid={form.errors.age && form.touched.age}>
-                                                        <FormLabel htmlFor='age'>Age</FormLabel>
-                                                        <Input {...field} id='age' type="number"/>
-                                                        <FormErrorMessage>{form.errors.age}</FormErrorMessage>
-                                                    </FormControl>
-                                                )}
-                                            </Field>
-                                            
                                         </Box>
                                         <Field name='email' >
                                             {({ field, form }) => (
@@ -155,64 +135,6 @@ export default function Create() {
                                                 </FormControl>
                                             )}
                                         </Field>
-                                        <Field name='sex' >
-                                            {({ field, form }) => (
-                                                <FormControl isInvalid={form.errors.sex && form.touched.sex}>
-                                                    <FormLabel htmlFor='sex'>Sex</FormLabel>
-                                                    <Input {...field} id='sex' />
-                                                    <FormErrorMessage>{form.errors.sex}</FormErrorMessage>
-                                                </FormControl>
-                                            )}
-                                        </Field>
-                                        <Field name='civilStatus' >
-                                            {({ field, form }) => (
-                                                <FormControl isInvalid={form.errors.civilStatus && form.touched.civilStatus}>
-                                                    <FormLabel htmlFor='civilStatus'>Civil Status</FormLabel>
-                                                    <Input {...field} id='civilStatus' />
-                                                    <FormErrorMessage>{form.errors.civilStatus}</FormErrorMessage>
-                                                </FormControl>
-                                            )}
-                                        </Field>
-                                          <Field name='nationality' >
-                                            {({ field, form }) => (
-                                                <FormControl isInvalid={form.errors.nationality && form.touched.nationality}>
-                                                    <FormLabel htmlFor='nationality'>Nationality</FormLabel>
-                                                    <Input {...field} id='nationality' />
-                                                    <FormErrorMessage>{form.errors.nationality}</FormErrorMessage>
-                                                </FormControl>
-                                            )}
-                                        </Field>
-
-                                        
-                                       
-                                        {/* <Box>
-                                            <Select
-                                                label="Legislative District"
-                                                name="legislativeDistrict"
-                                                options={legislativeDistrictOptions}
-                                            />
-                                        </Box>
-                                        <Box>
-                                            <Select
-                                                label="Administrative District"
-                                                name="administrativeDistrict"
-                                                options={administrativeDistricts}
-                                            />
-                                        </Box>
-                                        <Box>
-                                            <Select
-                                                label="Barangay"
-                                                name="barangay"
-                                                options={barangayOptions}
-                                            />
-                                        </Box>
-                                        <Box>
-                                            <Select
-                                                label="Position"
-                                                name="isAdmin"
-                                                options={positionOptions}
-                                            />
-                                        </Box> */}
 
                                     </Stack>
                                 </ModalBody>

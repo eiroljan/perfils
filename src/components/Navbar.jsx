@@ -189,7 +189,7 @@ const DesktopNav = () => {
           </Link>
           <Link to='/anounce'>
             <Text fontWeight={600} color="gray.600" >
-              Announcement
+              Establishment
             </Text>
           </Link>
           <Link to='/exams'>
